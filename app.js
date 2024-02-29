@@ -45,14 +45,14 @@ function verificarChute() {
 //Aqui temos a função gerar número aleatório, ela gera um número aleatório entre 1 e 10 que é armazenado na variável numeroEscolhido
 
 function gerarNumeroAleatorio() {
-  let numeroEscolhido = parseInt(Math.random() * 10 + 1);
+  let numeroEscolhido = parseInt(Math.random() * 100 + 1);
   let quantidadeDeElementosNaLista = listaDeNumeroSorteados.length; // length, é uma propriedade de arrays em JavaScript que retorna o número de elementos presentes em uma lista.
 
 //A condição if (quantidadeDeElementosNaLista == 3) verifica se a quantidade de elementos na lista listaDeNumeroSorteados é igual a 10.
 //Nesse caso, a linha de código listaDeNumeroSorteados = []; é executada, o que significa que a lista é reiniciada, ficando vazia novamente.
 //Essa reinicialização da lista é feita para evitar que a lista fique com mais de 10 elementos, garantindo que sempre haja espaço para sortear novos números.
 //Essa parte do código é importante
-  if (quantidadeDeElementosNaLista == 10){
+  if (quantidadeDeElementosNaLista == 100){
     listaDeNumeroSorteados = [];
   }
 
